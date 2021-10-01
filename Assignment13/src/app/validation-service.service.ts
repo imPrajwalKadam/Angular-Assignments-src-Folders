@@ -16,7 +16,7 @@ export class ValidationServiceService {
   static emailValidator(control: any): any 
   {
     if (control.value.match(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/)) 
-    { 
+    {
       return null;
     }
     else

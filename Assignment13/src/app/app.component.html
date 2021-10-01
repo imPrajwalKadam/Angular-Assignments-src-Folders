@@ -1,0 +1,194 @@
+<nav class="navbar navbar-dark bg-dark">
+     <!-- Navbar content -->
+   </nav>
+<mat-card-title>
+     <div class="container-fluid">
+     </div>
+     <div class="shadow-lg p-3 mb-5 bg-white rounded">
+          <div class="alert alert-light" role="alert">
+               <img src="assets/Image/MyImage.png" width="200" height="180" alt="Responsive image" class="SetImage"
+                    style="vertical-align:middle;margin: 0.11expx 90px">
+               <br><br>
+               <h1 style="text-align:center;color:hotpink">Contact Our</h1>
+               <h1 style="text-align:center;color: black;">Customer Support.</h1>
+          </div>
+     </div>
+
+     <div class="alert alert-light" role="alert">
+          <h2 style="text-align:">Contact information</h2>
+          <p style="text-align:">Please fill out your Contact information below.</p>
+     </div>
+</mat-card-title>
+<form [formGroup]="userForm" (submit)="saveUser()">
+     <div class="form-group">
+          <div class="mb-3" class="form-group col-lg-4">
+               <label for="name" class="form-label">Your Name*</label>
+               <div class="form-row">
+                    <div class="col">
+                         <input formControlName="FirstName" class="form-control" id="FirstName" type="text"placeholder="First name">
+
+                         <app-control-messages [control] = "userForm.get('FirstName')"class="text-danger"></app-control-messages>  
+                    </div>
+                    <div class="col">
+                         <input formControlName="LastName" class="form-control" id="LastName" type="text"placeholder="Last name">
+                         <app-control-messages [control] = "userForm.get('LastName')"class="text-danger"></app-control-messages>  
+                    </div>
+               </div>
+          </div>
+     </div>
+     <br>
+     <div class="form-group">
+          <div class="form-group col-md-6">
+               <label for="inputEmail4">Email*</label>
+               <input type="email" formControlName= "Email" class="form-control" id="Email" placeholder="Email">
+               <app-control-messages [control] = "userForm.get('Email')"class="text-danger"></app-control-messages>  
+
+          </div>
+     </div>
+     <br>
+     <div class="form-group">
+          <div class="form-group col-md-6">
+               <label for="phone">Phone*</label>
+               <input type="text" formControlName = "phone" class="form-control" id="phone" placeholder="+91">
+               <app-control-messages [control] = "userForm.get('phone')"class="text-danger"></app-control-messages>  
+          </div>
+     </div>
+     <br>
+     <div class="form-group">
+          <div class="form-group col-md-6">
+               <label for="inputAddress">Address*</label>
+               <input type="text" formControlName = "address" class="form-control" id="address">
+               <app-control-messages [control] = "userForm.get('address')"class="text-danger"></app-control-messages>  
+          </div>
+     </div>
+     <br>
+   
+<br>
+     <div class="form-group">
+          <div class="form-group col-md-6">
+               <button mat-raised-button color="primary" type="submit" [disabled]="!userForm.valid">Submit</button>
+          </div>
+     </div>
+</form>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+     <div style="background-color: #6351ce;">
+       <div class="container">
+   
+         <!-- Grid row-->
+         <div class="row py-4 d-flex align-items-center">
+   
+           <!-- Grid column -->
+           <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+             <h6 class="mb-0">Learning Custom Form Validation.  all Validation logic is in .ts File,For Front end i used Material UI AND ngBootstrap </h6>
+           </div>
+           <!-- Grid column -->
+   
+           <!-- Grid column -->
+           <div class="col-md-6 col-lg-7 text-center text-md-right">
+   
+             <!-- Facebook -->
+             <a class="fb-ic">
+               <i class="fab fa-facebook-f white-text mr-4"> </i>
+             </a>
+             <!-- Twitter -->
+             <a class="tw-ic">
+               <i class="fab fa-twitter white-text mr-4"> </i>
+             </a>
+             <!-- Google +-->
+             <a class="gplus-ic">
+               <i class="fab fa-google-plus-g white-text mr-4"> </i>
+             </a>
+             <!--Linkedin -->
+             <a class="li-ic">
+               <i class="fab fa-linkedin-in white-text mr-4"> </i>
+             </a>
+             <!--Instagram-->
+             <a class="ins-ic">
+               <i class="fab fa-instagram white-text"> </i>
+             </a>
+   
+           </div>
+           <!-- Grid column -->
+   
+         </div>
+         <!-- Grid row-->
+   
+       </div>
+     </div>
+   
+     <!-- Footer Links -->
+     <div class="container text-center text-md-left mt-5">
+   
+       <!-- Grid row -->
+       <div class="row mt-3">
+   
+         <!-- Grid column -->
+         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+   
+           <!-- Content -->
+           <h6 class="text-uppercase font-weight-bold">author name</h6>
+           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+           <p>Prajwal Kadam</p>
+   
+         </div>
+         <!-- Grid column -->
+   
+         <!-- Grid column -->
+         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+   
+           <!-- Links -->
+           <h6 class="text-uppercase font-weight-bold">Products</h6>
+           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+           <p>
+             <a href="#!">Angular</a>
+           </p>
+           <p>
+             <a href="#!">Material UI</a>
+           </p>
+         
+         </div>
+         <!-- Grid column -->
+   
+         <!-- Grid column -->
+         
+   
+         <!-- Grid column -->
+         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+   
+           <!-- Links -->
+           <h6 class="text-uppercase font-weight-bold">Contact</h6>
+           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+           <p>
+             <i class="fas fa-home mr-3"></i> Maharashtra, 142 somwar Peth,pune</p>
+           <p>
+
+           <p>
+             <i class="fas fa-phone mr-3"></i> + 91 7745 832 612</p>
+           <p>
+             <i class="fas fa-print mr-3"></i> + 91 7020 943 079</p>
+   
+         </div>
+         <!-- Grid column -->
+   
+       </div>
+       <!-- Grid row -->
+   
+     </div>
+     <!-- Footer Links -->
+   
+     <!-- Copyright -->
+     <div class="footer-copyright text-center py-3">© 2021 Copyright:
+       <a class="fas fa-envelope mr-3"lass="fas fa-home mr-3" href="https://github.com/imPrajwalKadam">www.prajwal.co.in</a> 
+       <br>
+
+       <a href="http://first-form.s3-website.ap-south-1.amazonaws.com"> www.amm.com</a>
+
+       
+     </div>
+     <!-- Copyright -->
+   
+   </footer>
+   <!-- Footer -->
+   
