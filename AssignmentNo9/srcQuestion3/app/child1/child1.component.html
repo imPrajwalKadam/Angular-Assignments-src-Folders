@@ -1,0 +1,15 @@
+
+
+{{"Count of Capital number is : "+sCnt}}
+
+
+
+<div *ngIf = "bRet; then ifBlock; else elseBlock"></div>    
+<ng-template #ifBlock>
+     <h2> Number is prime</h2>
+</ng-template>
+<ng-template #elseBlock>
+     <h2>
+          Number is not prime;
+     </h2>
+</ng-template>
